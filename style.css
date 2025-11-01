@@ -33,6 +33,16 @@ nav {
     font-weight: 700;
     font-size: 22px;
     color: white;
+    text-decoration: none;
+}
+
+.logo span a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo-link{
+    text-decoration: none;
 }
 
 .nav-links {
@@ -492,5 +502,227 @@ footer {
 
     .contact-form {
         margin-top: 2rem;
+    }
+}
+
+
+/* --- MEMBERSHIP PAGE STYLES --- */
+
+.membership-list {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.membership-list li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: #444;
+}
+
+.membership-list li::marker {
+    color: #008080;
+}
+
+.membership-img {
+    border-radius: 12px;
+    max-height: 480px;
+    object-fit: cover;
+    border: 3px solid #0080801a;
+    margin-bottom: 30px;
+}
+
+.down-button button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #008080;
+    color: white;
+}
+
+.down-button button:hover{
+    background: #008080;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px #008080;
+}
+
+.alert-info {
+    background-color: #e6f7f7;
+    border-color: #b6e3e3;
+    color: #004d4d;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .membership-img {
+        max-height: 300px;
+        margin-bottom: 20px;
+    }
+
+    .membership-list {
+        padding-left: 18px;
+    }
+}
+
+
+/* ABOUT PAGE STYLES */
+
+.about-section {
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.8;
+}
+
+.about-section .section-h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #008080;
+}
+
+.underline {
+    width: 80px;
+    height: 3px;
+    background-color: #008080;
+    margin-top: 8px;
+    border-radius: 5px;
+}
+
+.about-content p {
+    font-size: 1.05rem;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.teal-text {
+    color: #008080;
+    font-weight: 600;
+}
+
+.objectives {
+    margin-top: 40px;
+}
+
+.objectives-title {
+    color: #008080;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.objectives-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.objectives-list li {
+    font-size: 1.05rem;
+    color: #333;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: start;
+}
+
+.objectives-list i {
+    margin-top: 5px;
+}
+
+
+@media (max-width: 768px) {
+    .about-section {
+        padding: 40px 20px;
+    }
+
+    .section-h2 {
+        font-size: 1.6rem;
+    }
+
+    .objectives-title {
+        font-size: 1.4rem;
+    }
+
+    .objectives-list li {
+        font-size: 1rem;
+    }
+}
+
+
+/*PURCHASER'S GUIDE STYLES*/
+
+.purchaser-section {
+    background-color: #ffffff;
+}
+
+.section-h2 {
+    color: #008080;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.guide-subtext {
+    font-size: 1.05rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+.italic {
+    font-style: italic;
+    color: #555;
+}
+
+/* Table styling */
+.purchaser-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.purchaser-table thead th {
+    background-color: #008080;
+    /* Your requested header color */
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    padding: 12px;
+}
+
+.purchaser-table tbody td {
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 0.96rem;
+    padding: 12px;
+    vertical-align: top;
+}
+
+.purchaser-table a {
+    color: #0078d4;
+    text-decoration: none;
+}
+
+.purchaser-table a:hover {
+    text-decoration: underline;
+}
+
+.purchaser-table tr:nth-child(even) td {
+    background-color: #f1f1f1;
+}
+
+/* Table borders */
+.purchaser-table th,
+.purchaser-table td {
+    border: 1px solid #dcdcdc;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .section-h2 {
+        font-size: 1.6rem;
+    }
+
+    .guide-subtext {
+        font-size: 1rem;
+    }
+
+    .purchaser-table th,
+    .purchaser-table td {
+        font-size: 0.9rem;
     }
 }
