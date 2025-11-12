@@ -1,15 +1,34 @@
 // scripts.js - SESNET Africa Global JavaScript
-// Includes: Year Update + Contact Form + Future Features
+// Handles: Year Update, Hamburger Menu, Contact Form
 
 document.addEventListener('DOMContentLoaded', function () {
 
-    // === 1. Auto-update current year ===
+    //  1. Auto-update current year 
     const yearSpan = document.getElementById('current-year');
     if (yearSpan) {
         yearSpan.textContent = new Date().getFullYear();
     }
 
-    // === 2. Contact Form Submission ===
+    // 2. Hamburger Menu Menu Toggle 
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    if (hamburger && navLinks) {
+        hamburger.addEventListener('click', function () {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('open');
+        });
+
+        // Close menu when clicking a link
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('open');
+            });
+        });
+    }
+
+    // 3. Contact Form Submission (contactus.html only) 
     const form = document.getElementById('contact-form');
     if (!form) return;
 

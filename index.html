@@ -14,15 +14,25 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
     <!-- Navbar -->
     <nav>
         <div class="nav-bar">
             <div class="logo"><span><a href="index.html">SESNET Africa</a></span></div>
-            <div class="nav-links">
+
+            <!-- Hamburger Icon -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="nav-links" id="nav-links">
                 <a href="index.html">Home</a>
                 <a href="about.html">About Us</a>
                 <a href="membership.html">Membership</a>
@@ -64,13 +74,35 @@
         <!-- Problem Section -->
         <div class="prob-div">
             <div class="prob-wrapper">
-                <h2 class="section-h2">The Sanitation Challenge in Sub-Saharan Africa</h2>
+                <h2 class="section-h2">The Sanitation Challenge in Ghana & Sub-Saharan Africa</h2>
                 <p>
                     According to the WHO/ UNICEF JMP progress report for 2024, 46% (552 million) of people in
                     Sub-Saharan Africa either defecate in the open or use unimproved sanitation facilities. Only 35% of
                     this population have
                     access to basic or safely managed sanitation.
                 </p>
+                <p>From the Sanitation Financing Assessment Final Report published in 2022 by the Ministry of Sanitation
+                    and Water Resources, the findings below were highlighted: </p>
+                <p>
+                    In Ghana as of 2022, only 10% of the population has access to at least basic sanitation services,
+                    with 47% using shared
+                    (limited) sanitation facilities and 18% practicing open defecation. Government objectives are to
+                    increase access to
+                    basic sanitation but also to radically scale up safely managed services.
+                </p>
+
+                <p>
+                    Looking into 2030, sector targets are for 90% of Ghanaians to have access to at least basic
+                    sanitation, with shared
+                    sanitation only used by 10% of the population and open defecation eliminated. In practice, these
+                    targets require that 27
+                    million additional people have access to at least basic sanitation services by 2030 or more than 3
+                    million people every
+                    year.
+                </p>
+
+                <p>Ghana therefore needs to deliver sanitation services at scale and at pace in order to meet government
+                    objectives.</p>
             </div>
 
             <!-- Bootstrap Cards with Animation -->
@@ -78,27 +110,30 @@
                 <div class="card text-bg-danger mb-3">
                     <div class="card-header">The Challenge</div>
                     <div class="card-body">
-                        <h5 class="card-title">46%</h5>
-                        <p class="card-text">552 million in Sub-Saharan Africans either defecate in the open or use
-                            unimproved sanitation facilities.</p>
+                        <h5 class="card-title">47%</h5>
+                        <p class="card-text"> ...Ghanaians were using shared (limited) sanitation facilities and 18%
+                            practised open defecation.</p>
                     </div>
                 </div>
 
                 <div class="card text-bg-info mb-3">
                     <div class="card-header">Achieved</div>
                     <div class="card-body">
-                        <h5 class="card-title"> < 50%</h5>
-                        <p class="card-text">Only 35% of this Sub-Saharan population have access to basic or safely
-                            managed sanitation.</p>
+                        <h5 class="card-title"> only 10%</h5>
+                        <p class="card-text">...Of the Ghanaian population had access to at least basic sanitation
+                            services.</p>
                     </div>
                 </div>
 
                 <div class="card text-bg-success mb-3">
                     <div class="card-header">Progress Required</div>
                     <div class="card-body">
-                        <h5 class="card-title">6 Times</h5>
-                        <p class="card-text">Based on the overall progress in access, the report indicates the rate of
-                            progress will need to increase sixfold to meet the global SDG target 6.2a, by 2030.</p>
+                        <h5 class="card-title"> +27M People</h5>
+                        <p class="card-text">Meeting Ghana’s sanitation
+                            objectives, requires that every year, up to
+                            2030, between 320,000 and 440,000 new
+                            toilet facilities are constructed. The value of these improvements is estimated at GHS 16.3
+                            billion (US$ 2.69 billion) </p>
                     </div>
                 </div>
             </div>
@@ -113,8 +148,8 @@
                     <p><strong>SESNET-Africa</strong> is a Non-Governmental Organisation (NGO) consisting of registered
                         and approved sanitation enterprise-solution providers. We serve as a vital platform that
                         promotes the services and facilities of registered providers.</p>
-                        
-                        <br>
+
+                    <br>
 
                     <p>Our mission is to make the various sanitation technologies known to households, thereby making
                         the sanitation market open and more competitive. We also play a crucial role in training
@@ -124,19 +159,20 @@
                 <div class="right-container">
                     <div class="flexcards-column">
                         <span class="icon"><i class="fa-solid fa-handshake"></i></span>
-                        <span>NGO Platform for Providers</span>
+                        <span>MMS (Micro, Mini, and Small) enterprise-solution services providers</span>
                     </div>
                     <div class="flexcards-column">
                         <span class="icon"><i class="fa-solid fa-magnifying-glass-dollar"></i></span>
-                        <span>Promoting Market Competition</span>
+                        <span>Creating jobs & reducing youth unemployment in Ghana and target countries </span>
                     </div>
                     <div class="flexcards-column">
                         <span class="icon"><i class="fa-solid fa-screwdriver-wrench"></i></span>
-                        <span>Training Artisans for Installation</span>
+                        <span>Training artisans for rapid upscaling of home-toilet ownership in Ghana and target
+                            countries</span>
                     </div>
                     <div class="flexcards-column">
                         <span class="icon"><i class="fa-solid fa-users-viewfinder"></i></span>
-                        <span>Accelerating SDG 6.2a Target</span>
+                        <span>Accelerating SDG 6.2a and in essence SDG 8 targets by the United Nations (UN).</span>
                     </div>
                 </div>
             </div>
@@ -144,6 +180,7 @@
     </section>
 
     <!--  Styled Footer  -->
+    <!-- Footer -->
     <footer>
         <div class="foot-div">
             <div class="foot-logo">
@@ -151,11 +188,11 @@
                 <p>Networking Enterprises for Rapid Sanitation Coverage and Jobs</p>
             </div>
             <div class="foot-links">
-                <i class="fa-brands fa-square-whatsapp"></i>
-                <i class="fa-brands fa-square-instagram"></i>
-                <i class="fa-brands fa-square-x-twitter"></i>
-                <i class="fa-brands fa-square-facebook"></i>
-                <i class="fa-brands fa-square-linkedin"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-whatsapp"></i>
             </div>
         </div>
         <div class="border-div"></div>
@@ -173,15 +210,15 @@
         </div>
     </footer>
 
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 
-    <!-- Auto-update current year -->
-    <script>
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
+    <script src="scripts.js"></script>
+
+
 </body>
 
 </html>

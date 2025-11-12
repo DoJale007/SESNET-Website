@@ -21,13 +21,23 @@
 
 <body>
 
+
     <!-- Navbar -->
     <nav>
         <div class="nav-bar">
             <div class="logo"><span><a href="index.html">SESNET Africa</a></span></div>
-            <div class="nav-links">
+
+            <!-- Hamburger Icon -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="nav-links" id="nav-links">
                 <a href="index.html">Home</a>
-                <a href="about.html" class="active">About Us</a>
+                <a href="about.html">About Us</a>
                 <a href="membership.html">Membership</a>
                 <a href="purchasers.html">Purchasers' Guide</a>
                 <a href="contactus.html">Contact Us</a>
@@ -62,17 +72,22 @@
                 <ul class="objectives-list mt-3">
                     <li><i class="fa-solid fa-check" style="color: #008080;"></i> Engage sustainable enterprise-solution
                         providers across Africa</li>
-                    <li><i class="fa-solid fa-check" style="color: #008080;"></i> Provide a platform for sharing innovative
+                    <li><i class="fa-solid fa-check" style="color: #008080;"></i> Provide a platform for sharing
+                        innovative
                         sanitation solutions</li>
-                    <li><i class="fa-solid fa-check" style="color: #008080;"></i> Accelerate home latrine upgrades to meet
+                    <li><i class="fa-solid fa-check" style="color: #008080;"></i> Accelerate home latrine upgrades to
+                        meet
                         SDGs</li>
-                    <li><i class="fa-solid fa-check" style="color: #008080;"></i> Serve as an online market hub for toilet
+                    <li><i class="fa-solid fa-check" style="color: #008080;"></i> Serve as an online market hub for
+                        toilet
                         providers</li>
-                    <li><i class="fa-solid fa-check" style="color: #008080;"></i> Foster communication and best practices
+                    <li><i class="fa-solid fa-check" style="color: #008080;"></i> Foster communication and best
+                        practices
                         among stakeholders</li>
                     <li><i class="fa-solid fa-check" style="color: #008080;"></i> Establish global linkages with similar
                         organizations</li>
-                    <li><i class="fa-solid fa-check" style="color: #008080;"></i> Offer consultancy and support to members
+                    <li><i class="fa-solid fa-check" style="color: #008080;"></i> Offer consultancy and support to
+                        members
                     </li>
                     <li><i class="fa-solid fa-check" style="color: #008080;"></i> Create jobs for youth in sanitation
                         construction and marketing</li>
@@ -114,9 +129,7 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script>
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
+    <script src="scripts.js"></script>
 
 </body>
 
