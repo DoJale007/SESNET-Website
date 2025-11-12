@@ -3,110 +3,111 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SESNET-Africa: The Solution Platform</title>
+    <title>World Toilet Day Countdown</title>
     <style>
         body {
-            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-            margin: 40px;
-            background-color: #fff;
-            color: #222;
-            line-height: 1.6;
-        }
-
-        h2 {
-            color: #0b5fa4;
-            border-bottom: 3px solid #0b5fa4;
-            display: inline-block;
-            padding-bottom: 5px;
-            margin-bottom: 20px;
-        }
-
-        .container {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #f0f0f0;
             display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            gap: 40px;
-        }
-
-        .left {
-            flex: 1;
-        }
-
-        .right {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .card {
-            background-color: #f8f9fa;
-            padding: 15px 20px;
-            border-radius: 6px;
-            border: 1px solid #e5e5e5;
-            display: flex;
+            justify-content: center;
             align-items: center;
-            gap: 10px;
-            transition: all 0.2s ease;
-            cursor: default;
+            height: 100vh;
         }
 
-        .card:hover {
-            background-color: #e9f2fb;
-            transform: translateY(-2px);
+        .imager-container {
+            position: relative;
+            max-width: 1000px;
+            width: 100%;
         }
 
-        .icon {
-            font-size: 18px;
-            color: #0b5fa4;
+        .imager-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
         }
 
-        @media (max-width: 768px) {
-            .container {
-                flex-direction: column;
-            }
+        .countdown {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            top: 0;
+            width: 80px;
+            background: rgba(0, 0, 0, 0.7);
+            color: #15ccfa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: rotate(-180deg);
+            writing-mode: vertical-lr;
+            text-align: center;
+            padding: 10px;
+            font-size: 1rem;
+            border-top-left-radius: px;
+            border-bottom-left-radius: px;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .countdown h2 {
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: bold;
+            font-style: italic;
+            margin-top: 30px;
+            word-spacing: 5px;
+        }
+
+        .countdown span {
+            font-size: 0.9rem;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        #timer{
+            font-size: 1.5rem;
+            font-style: italic;
         }
     </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
 
-    <h2>SESNET-Africa: The Solution Platform</h2>
-
-    <div class="container">
-        <div class="left">
-            <p><strong>SESNET-Africa</strong> is a Non-Governmental Organisation (NGO) consisting of registered and
-                approved sanitation enterprise-solution providers. We serve as a vital platform that promotes the
-                services and facilities of registered providers.</p>
-            <p>Our mission is to make the various sanitation technologies known to households, thereby making the
-                sanitation market open and more competitive. We also play a crucial role in training artisans to market
-                and install these facilities, creating jobs and sustainable development.</p>
-        </div>
-
-        <div class="right">
-            <div class="card">
-                <span class="icon">🤝</span>
-                <span>NGO Platform for Providers</span>
-            </div>
-            <div class="card">
-                <span class="icon">🔍</span>
-                <span>Promoting Market Competition</span>
-            </div>
-            <div class="card">
-                <span class="icon">🛠️</span>
-                <span>Training Artisans for Installation</span>
-            </div>
-            <div class="card">
-                <span class="icon">⚙️</span>
-                <span>Accelerating SDG 6.2a Target</span>
+    <div class="imager-container">
+        <img src="assets/wmremove-transformed.jpeg" alt="World Toilet Day">
+        <div class="countdown">
+            <div>
+                <h2>Countdown to World Toilet Day</h2>
+                <span id="timer">Loading...</span>
             </div>
         </div>
     </div>
-    <i class="fa-brands fa-github fa-spin"></i>
+
+    <script>
+        function updateCountdown() {
+            const targetDate = new Date("November 19, 2025 00:00:00").getTime();
+            const now = new Date().getTime();
+            const distance = targetDate - now;
+
+            if (distance < 0) {
+                document.getElementById("timer").innerText = "It's World Toilet Day!";
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("timer").innerText =
+                `${days}d ${hours}h ${minutes}m ${seconds}s`;
+        }
+
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+    </script>
+
 </body>
 
 </html>
