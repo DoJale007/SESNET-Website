@@ -10,7 +10,7 @@
 nav {
     width: 100%;
     height: 70px;
-    background: #008080;
+    background: #22defb;
     position: fixed;
     top: 0;
     left: 0;
@@ -29,16 +29,11 @@ nav {
     height: 100%;
 }
 
-.logo span {
-    font-weight: 700;
-    font-size: 22px;
-    color: white;
-    text-decoration: none;
-}
-
-.logo span a{
-    text-decoration: none;
-    color: white;
+.logo-img {
+    height: 120px;
+    width: auto;
+    max-width: 150px;
+    display: block;
 }
 
 .logo-link{
@@ -66,8 +61,8 @@ nav {
 } */
 
 .nav-links a:hover{
-    background-color: white;
-    color: #008080;
+    background-color: #fff;
+    color: #01b4cf;
 }
 
 body {
@@ -185,7 +180,7 @@ body {
 }
 
 .flexcards-column:hover {
-    background-color: #008080;
+    background-color: #01b4cf;
     color: white;
     transform: translateX(8px);
     box-shadow: 0 6px 16px rgba(0, 102, 204, 0.3);
@@ -212,7 +207,7 @@ body {
 /* Footer */
 footer {
     width: 100%;
-    background-color: #008080;
+    background-color: #01b4cf;
     color: white;
     margin-top: 80px;
 }
@@ -437,12 +432,12 @@ footer {
 }
 
 .contact-form .form-control:focus {
-    border-color: #008080;
+    border-color: #22defb;
     box-shadow: 0 0 0 0.2rem rgba(0, 102, 204, 0.2);
 }
 
 .contact-form .btn-primary {
-    background: #008080;
+    background: #22defb;
     border: none;
     border-radius: 8px;
     padding: 12px;
@@ -451,7 +446,7 @@ footer {
 }
 
 .contact-form .btn-primary:hover {
-    background: #008080;
+    background: #0ec9e6;
     transform: translateY(-2px);
     box-shadow: 0 6px 16px #008080;
 }
@@ -576,13 +571,13 @@ footer {
 .about-section .section-h2 {
     font-size: 2rem;
     font-weight: 700;
-    color: #008080;
+    color: #01b4cf;
 }
 
 .underline {
     width: 80px;
     height: 3px;
-    background-color: #008080;
+    background-color: #01b4cf;
     margin-top: 8px;
     border-radius: 5px;
 }
@@ -594,7 +589,7 @@ footer {
 }
 
 .teal-text {
-    color: #008080;
+    color: #01b4cf;
     font-weight: 600;
 }
 
@@ -603,7 +598,7 @@ footer {
 }
 
 .objectives-title {
-    color: #008080;
+    color: #01b4cf;
     font-size: 1.6rem;
     font-weight: 700;
 }
@@ -652,7 +647,7 @@ footer {
 }
 
 .section-h2 {
-    color: #008080;
+    color: #01b4cf;
     font-weight: 700;
     font-size: 2rem;
 }
@@ -676,7 +671,7 @@ footer {
 }
 
 .purchaser-table thead th {
-    background-color: #008080;
+    background-color: #01b4cf;
     /* Your requested header color */
     color: #fff;
     text-align: center;
@@ -767,7 +762,7 @@ footer {
         top: 100%;
         left: 0;
         width: 100%;
-        background: #008080;
+        background: #22defb;
         flex-direction: column;
         align-items: center;
         max-height: 0;
@@ -829,6 +824,8 @@ footer {
         font-size: 0.85rem;
     }
 }
+
+/* World Toilets Day Countdown Styling */
 .countdown-slide {
    position: relative;
    max-width: 100%;
