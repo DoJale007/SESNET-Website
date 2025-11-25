@@ -388,7 +388,7 @@ footer {
 } */
 
 .teal{
-    color: #008080;
+    color: #01b4cf;
     text-decoration: none;
     font-weight: 500;
 }
@@ -591,6 +591,10 @@ footer {
 .teal-text {
     color: #01b4cf;
     font-weight: 600;
+}
+
+.about-list{
+    list-style: lower-roman;
 }
 
 .objectives {
